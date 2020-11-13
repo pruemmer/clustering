@@ -20,7 +20,7 @@ object RETrie {
 
   def printTrie(words : Seq[String], prefix : String) : Unit = words match {
     case Seq() =>
-      println(prefix + "re.empty")
+      println(prefix + "re.none")
     case Seq(w) =>
       printStr(w, prefix)
     case _ => {
